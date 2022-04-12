@@ -13,7 +13,7 @@
 .title-1::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 100vw;
   right: 0;
   top: 20px;
   height: 1px;
@@ -23,7 +23,7 @@
 .title-2::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 100vw;
   left: 0;
   top: 86px;
   height: 1px;
@@ -58,10 +58,10 @@
   height: auto;
 }
 
-.container__box {
-  max-width: 1420px;
-  margin: auto;
-}
+// .container__box {
+//   max-width: 1420px;
+//   margin: auto;
+// }
 
 .box__number {
   font-weight: bold;
@@ -119,6 +119,11 @@
   margin-top: 46px;
 }
 
+.gap__third--box {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 @media (max-width: 62rem) {
   .title-2::before {
     display: none;
@@ -146,6 +151,14 @@
   .template__columns {
     grid-column-start: 1;
     margin-bottom: -92px;
+  }
+
+  .margin__bottom--second {
+    margin-bottom: 62px;
+  }
+
+  .margin__bottom--four {
+    margin-bottom: 60px;
   }
 
   .template__column {
@@ -186,6 +199,45 @@
   }
   .margin__bottom {
     margin-bottom: 155px;
+  }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 75em) {
+  .margin__bottom--second {
+    margin-bottom: 230px;
+  }
+}
+
+@media only screen and (min-width: 62em) and (max-width: 75em) {
+  .margin__bottom--four {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 62em) {
+  .margin__bottom--second {
+    margin-bottom: 404px;
+  }
+  .margin__bottom--four {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 36em) and (max-width: 48em) {
+  .margin__bottom--second {
+    margin-bottom: 221px;
+  }
+  .margin__bottom--four {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 36em) {
+  .gap__first--box {
+    margin-bottom: 35px;
+  }
+  .gap__fourth--box {
+    margin-bottom: 35px;
   }
 }
 
