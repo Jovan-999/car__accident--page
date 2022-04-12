@@ -10,6 +10,7 @@
 .title-1 {
   opacity: 70%;
 }
+
 .title-1::before {
   content: '';
   position: absolute;
@@ -76,6 +77,11 @@
 }
 
 .background__color {
+  background-color: #4e0003;
+  background-clip: content-box;
+}
+
+.background__color--three {
   background-color: #4e0003;
 }
 
